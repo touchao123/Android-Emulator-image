@@ -3,10 +3,11 @@ name: docker push
 on:
   workflow_dispatch:
 
-jobs:
+jobs:      
   Pushing-docker-image:
     runs-on: ${{ matrix.os }}
-
+    environment:
+        name: someip-docker
     steps:
       - uses: actions/checkout@v3
 
