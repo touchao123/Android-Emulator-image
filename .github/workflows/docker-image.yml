@@ -7,7 +7,7 @@ jobs:
   Pushing-docker-image:
     runs-on: ${{ matrix.os }}
     environment:
-        name: someip-docker
+        name: docker_credential
     steps:
       - uses: actions/checkout@v3
 
